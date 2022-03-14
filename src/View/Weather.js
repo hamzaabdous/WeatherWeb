@@ -19,7 +19,7 @@ const Weather = () => {
             />
           </div>
         </header>
-        <main className="row d-flex justify-content-center align-items-center">
+        <main className="row m-5">
           <Main />
         </main>
         <footer className="row">
