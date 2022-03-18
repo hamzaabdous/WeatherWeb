@@ -9,9 +9,11 @@ const Weather = () => {
   }
   return (
     <>
-      <div className="container-fluid" style={{ backgroundColor: "#7dd3fc" }}>
-        <header className="row">
-          <Nav />
+      <div
+        className="container-fluid"
+        style={{ backgroundColor: "#7dd3fc", height: "100vh" }}
+      >
+        <header className="pt-5 row">
           <div className="row d-flex justify-content-center align-items-center">
             <input
               style={{
