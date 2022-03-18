@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../style/Main.css";
 import img1 from "../../Assets/Images/Sun cloud mid rain.png";
-const Main = () => {
+
+const Main = ({ Data }) => {
   return (
     <div className="d-flex justify-content-center align-items-center ">
       <div className="glass">
@@ -11,9 +12,9 @@ const Main = () => {
               <img src={img1} alt="" width={130} height={130} />
             </div>
             <div class="mt-4 p-2  bd-highlight fs-3">
-              RABAT
+              {Data == null ? "" : Data.name}
               <br />
-              20*C
+              {Data == null ? "" : (Data.main.temp - 273.15).toFixed(0) + "C°"}
             </div>
           </div>
           <div className="p-4">
